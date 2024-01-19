@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2021-07-17 12:10">
+<shop>
+<name>Клиника "Аннабелла"</name>
+<company>ООО «Аннабелла»</company>
+<url>https://annabella-ekb.ru/</url>
+<email>annabella-ekb@mail.ru</email>
+<picture>https://static.tildacdn.com/tild3135-3766-4866-b366-306565383865/DSC00340_resized.jpg</picture>
+<description>Каталог врачей</description>
+<currencies>
+<currency id="RUR" rate="1"/>
+</currencies>
+<categories>
+<category id="1">Врач</category>
+</categories>
+<sets>
+<set id="kosmetolog">
+<name>Косметолог</name>
+<url>https://annabella-ekb.ru/</url>
+</set>
+<set id="dermatovenerolog">
+<name>Дерматовенеролог</name>
+<url>https://annabella-ekb.ru/</url>
+</set>
+</sets>
+<offers>
+<!-- 
+                Оффер для врача - это связка "Врач"-"Клиника"-"Тип приема".
+                При наличии у врача нескольких офферов нужно предоставить каждый из них отдельно.
+                В таком случае URL разных офферов одного врача должны различаться незначащим cgi-параметром ?offer-id=...
+
+             -->
+<!-- group_id - уникальный идентификтаор врача. нужен при наличии разных URL у одного человека. Целое число, не более 9 знаков -->
+<offer id="vrach123" group_id="95748">
+<name>Белавина Анна Владимировна</name>
+<!-- ФИО, именно в таком порядке -->
+<!-- URL может совпадать ТОЛЬКО для офферов с одинаковым group_id. -->
+<url>https://annabella-ekb.ru</url>
+<!-- URL карточки врача.  -->
+<price from="true">900</price>
+<oldprice>1000</oldprice>
+<currencyId>RUR</currencyId>
+<sales_notes>Первичный прием</sales_notes>
+<set-ids>kardiolog</set-ids>
+<picture>https://static.tildacdn.com/tild3135-3766-4866-b366-306565383865/DSC00340_resized.jpg</picture>
+<description>Основные направления профессиональной деятельности: уходовые процедуры за лицом, ботокс, смас лифтинг и RSL скульптурирование. Опыт работы с 2007 года. Уральская мед акадения закончена с отличием. Прием пациентов с 18 лет. </description>
+<categoryId>1</categoryId>
+<param name="Фамилия">Белавина</param>
+<param name="Имя">Анна</param>
+<param name="Отчество">Владимировна</param>
+<param name="Годы опыта">16</param>
+<param name="Начало карьеры">2007-01-01</param>
+<param name="Город">г. Екатеринбург</param>
+<param name="Взрослый врач">true</param>
+<param name="Детский врач">false</param>
+<param name="Ссылка на профиль врача">https://annabella-ekb.ru</param>
+<param name="Город клиники">г. Екатеринбург</param>
+<param name="Адрес клиники">ул. Радищева, д.33</param>
+<param name="Название клиники">Клиника «Аннабелла"»</param>
+<param name="Возможность записи">true</param>
+<param name="Телефон для записи">+7 902 872-83-20</param>
+</offer>
+</offers>
+</shop>
+</yml_catalog>
